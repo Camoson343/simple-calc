@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calc</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-header">
+            <h2>Calculator</h2>
+        </div>
+        <input type="text" id="result" disabled>
+        <div class="calculator-btn-container">
+            <div class="calculator-btn" onclick="appendValue('7')">7</div>
+            <div class="calculator-btn" onclick="appendValue('8')">8</div>
+            <div class="calculator-btn" onclick="appendValue('9')">9</div>
+            <div class="calculator-btn operator" onclick="appendValue('+')">+</div>
+            <div class="calculator-btn" onclick="appendValue('4')">4</div>
+            <div class="calculator-btn" onclick="appendValue('5')">5</div>
+            <div class="calculator-btn" onclick="appendValue('6')">6</div>
+            <div class="calculator-btn operator" onclick="appendValue('-')">-</div>
+            <div class="calculator-btn" onclick="appendValue('1')">1</div>
+            <div class="calculator-btn" onclick="appendValue('2')">2</div>
+            <div class="calculator-btn" onclick="appendValue('3')">3</div>
+            <div class="calculator-btn operator" onclick="appendValue('*')">*</div>
+            <div class="calculator-btn" onclick="appendValue('0')">0</div>
+            <div class="calculator-btn" onclick="appendValue('.')">.</div>
+            <div class="calculator-btn equal" onclick="calculate()">=</div>
+            <div class="calculator-btn operator" onclick="appendValue('/')">/</div>
+            <div class="calculator-btn operator" onclick="clearResult()">C</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="footer">
+        <p>This project was created utilizing AI such as ChatGPT, Jit.codes, & DebugCode.ai</p>
+    </div>
+</body>
+</html>
